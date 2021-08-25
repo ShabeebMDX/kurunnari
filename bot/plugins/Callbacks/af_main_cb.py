@@ -48,7 +48,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     # Checks if user is same as requested user or is admin
     if not ((user_id == ruser_id) or (user_id in chat_admins)):
-        await update.answer("Nice Try ;)",show_alert=True)
+        await update.answer("നിന്നെ കൊണ്ടൊന്നും പറ്റൂല മോനേ 😂;)",show_alert=True)
         return
 
 
@@ -139,7 +139,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"✦ Found Results : {(len_results)} \n \n ✦ Your Request : <code>{query}</code>",
         
     try:
         await update.message.edit(
